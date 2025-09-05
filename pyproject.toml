@@ -1,0 +1,30 @@
+[tool.briefcase]
+project_name = "OpenF1 Live Insights"
+bundle = "com.example.openf1"
+version = "0.1.0"
+url = "https://github.com/yourusername/openf1-live-insights"
+license = "MIT license"
+author = "Your Name"
+author_email = "your.email@example.com"
+
+[tool.briefcase.app.openf1_live_insights]
+formal_name = "OpenF1 Live Insights"
+description = "F1 race data insights app"
+icon = "resources/icon"
+sources = ["src/openf1_live_insights"]
+requires = ["toga", "plotly"]
+
+[tool.briefcase.app.openf1_live_insights.macOS]
+requires = ["toga-cocoa"]
+
+[tool.briefcase.app.openf1_live_insights.linux]
+requires = ["toga-gtk"]
+
+[tool.briefcase.app.openf1_live_insights.windows]
+requires = ["toga-winforms"]
+
+[tool.briefcase.app.openf1_live_insights.iOS]
+requires = ["toga-iOS"]
+
+[tool.briefcase.app.openf1_live_insights.android]
+requires = ["toga-android"]
