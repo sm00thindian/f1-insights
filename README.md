@@ -3,7 +3,7 @@
 A Python native app using BeeWare to pull near real-time F1 race data from OpenF1 API and provide fan-focused insights. Supports live streaming and historical views on mobile (iOS/Android) and desktop.
 
 ## Setup
-1. Clone the repo: `git clone https://github.com/yourusername/openf1-live-insights.git`
+1. Clone the repo: `git clone https://github.com/sm00thindian/f1-insights.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Install Briefcase: `pip install briefcase`
 4. Create project scaffolds: `briefcase create` (for all platforms) or `briefcase create android` for Android.
