@@ -2,17 +2,17 @@
 project_name = "OpenF1 Live Insights"
 bundle = "com.example.openf1"
 version = "0.1.0"
-url = "https://github.com/yourusername/openf1-live-insights"
+url = "https://github.com/sm00thindian/f1-insights"
 license = "MIT license"
-author = "Your Name"
-author_email = "your.email@example.com"
+author = "Kilynn Weber"
+author_email = "cheesy.email@gmail.com"
 
 [tool.briefcase.app.openf1_live_insights]
-formal_name = "OpenF1 Live Insights"
+formal_name = "F1 Live Insights"
 description = "F1 race data insights app"
 icon = "resources/icon"
 sources = ["src/openf1_live_insights"]
-requires = ["toga", "plotly"]
+requires = ["toga", "plotly", "folium", "geopandas", "requests"]
 
 [tool.briefcase.app.openf1_live_insights.macOS]
 requires = ["toga-cocoa"]
