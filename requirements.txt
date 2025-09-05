@@ -3,4 +3,6 @@ paho-mqtt==2.1.0
 python-dotenv==1.0.1
 pandas==2.2.2
 plotly==5.23.0
-toga  # Installed via briefcase, but add for dev
+folium==0.15.0
+geopandas==0.14.3
+toga  # Via briefcase
