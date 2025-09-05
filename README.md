@@ -9,6 +9,7 @@ A Python native app using BeeWare to pull near real-time F1 race data from OpenF
 4. Create project scaffolds: `briefcase create` (for all platforms) or `briefcase create android` for Android.
 5. For live mode: Get OpenF1 credentials (paid account for real-time) at https://tally.so/r/w2yWDb.
 6. Rename `.env.example` to `.env` and fill in credentials (optional for historical).
+7. For elevation profiles: Add GOOGLE_API_KEY to .env (optional; from console.cloud.google.com).
 
 ## Usage
 - **Development Mode**: `briefcase dev` (runs on desktop for testing).
@@ -18,6 +19,8 @@ A Python native app using BeeWare to pull near real-time F1 race data from OpenF
 - Enter session/meeting keys, select mode/driver/team/tire. Tabs for views (standings, laps, etc.).
 - Live mode updates every 10s.
 - Find keys via API: curl "https://api.openf1.org/v1/sessions?year=2025".
+
+- New Feature: Track Map tab with circuit layouts, altitude, and interactive map from bacinger/f1-circuits GeoJSON data. Supports all circuits via runtime fetch from GitHub raw URLs. Optional Google Elevation API for detailed profiles (add GOOGLE_API_KEY to .env).
 
 ## Dependencies
 - Python 3.10+
